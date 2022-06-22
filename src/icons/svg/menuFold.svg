@@ -1,0 +1,22 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+	<defs>
+		<image width="6" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAAXNSR0IArs4c6QAAAKlJREFUKFNtkLERgkAQRf8HTTSQTqQFK1A6OKMbQysQK9DEAKOzAukASsBONHa474AjwuhGO//N7Ntdol/mEAWYFk3Efh6acw5iKejWgcBkKcmdoIeXj9/AZKuQvDZtrXoBtykJc4oDjAsSkaStd/bYOoJ1VhGcS7p4Z83H2QFIee1s0oF2FEclwZmkvXc2/a47kCuBs/nvusLd47n4f6BQDQCal3BSNo4Xo6FJd8M23BIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		.s0 { fill: #e3e6e8 } 
+		.s1 { fill: none;stroke: #03619a;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2 } 
+	</style>
+	<g id="工厂配色">
+		<g id="切图">
+			<g id="编组-2">
+				<rect id="矩形" class="s0" width="48" height="48" rx="2"></rect>
+				<g id="编组-3">
+					<path id="路径-13" class="s1" d="m11 16h14"/>
+					<path id="路径-13备份" class="s1" d="m11 24h14"/>
+					<path id="路径-13备份-2" class="s1" d="m11 32h14"/>
+					<use id="路径-14" href="#img1" transform="matrix(-1,0,0,-1,38,30)"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

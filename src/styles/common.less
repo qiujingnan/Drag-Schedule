@@ -1,0 +1,104 @@
+@import "./variables.less";
+
+// nprogress 颜色修改
+#nprogress .bar {
+  background: @primary-color;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  background: #f4f4f4;
+  font-family: "BoschSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+//修改默认滚动条样式
+// 谷歌
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(144, 147, 153, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+// 火狐
+* {
+  scrollbar-color: rgba(144, 147, 153, 0.3) transparent;
+  scrollbar-width: thin; // auto thin none
+}
+
+// flex 布局
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.btn {
+  width: 90px;
+  margin: 10px;
+  border-radius: 25px;
+}

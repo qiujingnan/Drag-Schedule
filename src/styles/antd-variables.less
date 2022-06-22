@@ -1,0 +1,50 @@
+// ant design 变量覆盖 
+// https://github.boschdevcloud.com/ZDO5WX/CodeLibrary/blob/main/default.less 
+@import '~ant-design-vue/dist/antd.less';
+@import './variables.less';
+
+// @primary-color: #03619A; // 全局主色
+// @link-color: #03619A; // 链接色
+@success-color: #52c41a; // 成功色
+@warning-color: #faad14; // 警告色
+@error-color: #f5222d; // 错误色
+@font-size-base: 14px; // 主字号
+@heading-color: rgba(0, 0, 0, 0.85); // 标题色
+@text-color: rgba(0, 0, 0, 0.65); // 主文本色
+@text-color-secondary: rgba(0, 0, 0, 0.45); // 次文本色
+@disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+@border-radius-base: 2px; // 组件/浮层圆角
+@border-color-base: #d9d9d9; // 边框色
+@box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15); // 浮层阴影
+
+// menu
+@menu-inline-toplevel-item-height: 60px;
+@menu-item-height: 60px;
+@menu-item-active-bg: #EFF1F2;
+@menu-item-color: #9DA1A8;
+@menu-icon-size: 20px;
+@menu-icon-size-lg: 22px;
+
+//table
+@table-header-bg: #e8edf0;
+@table-header-color: @primary-color;
+@border-color-split: @opacity-color;
+
+
+// fix primary btn 显示比普通button多个边框
+.ant-btn-primary {
+    border-color: #d9d9d9;
+}
+
+//form
+.ant-form-item-label>label {
+    font-weight: bold;
+    color: #A7B0BF;
+}
+
+input::placeholder,
+textarea::placeholder,
+.ant-select-selection__placeholder {
+    font-weight: 500;
+    color: #B4BED1!important;
+}

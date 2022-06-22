@@ -1,0 +1,46 @@
+// 侧边栏样式修改
+@import "@/styles/variables.less";
+
+::v-deep .ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+    left: 0;
+    right: auto;
+    top: calc(50% - 20px);
+    border-width: 4px;
+    border-radius: 0 4px 4px 0;
+    height: 40px;
+}
+
+::v-deep .ant-menu-item,
+.ant-menu-submenu {
+    font-weight: bold;
+}
+
+::v-deep .ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+    border: none;
+}
+
+::v-deep .ant-menu-item .anticon,
+.ant-menu-submenu-title .anticon {
+    color: @primary-color;
+    opacity: 0.5;
+    transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+::v-deep .ant-menu-item-selected .anticon,
+.ant-menu-item-active .anticon {
+    opacity: 1;
+}
+
+.ant-menu-submenu-active .ant-menu-submenu-title .anticon,
+.ant-menu-submenu-selected .ant-menu-submenu-title .anticon {
+    opacity: 1;
+}
+
+::v-deep .ant-menu-item {
+    margin-top: 0 !important;
+}
