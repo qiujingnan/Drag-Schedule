@@ -39,33 +39,34 @@
         </a-upload>
       </div>
       <div class="graph">
-        <p>Graph & image</p>
-        <div class="content">
-          <a-card style="width: 350px">
+        <div class="title" style="height: 50px; font-size: 25px; padding: 8px">
+          Graph & image
+        </div>
+        <div class="content1">
+          <div class="card">
             <img
-              slot="cover"
               alt="example"
               src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
             />
-          </a-card>
-          <a-card style="width: 350px">
+          </div>
+          <div class="card">
             <img
-              slot="cover"
               alt="example"
               src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
             />
-          </a-card>
-          <a-card style="width: 350px">
+          </div>
+          <div class="card">
             <img
-              slot="cover"
               alt="example"
               src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
             />
-          </a-card>
+          </div>
         </div>
       </div>
       <div class="report">
-        <p>AI Prediction Report</p>
+        <div class="title" style="height: 50px; font-size: 25px; padding: 8px">
+          AI Prediction Report
+        </div>
         <div class="content">
           <a-descriptions title="" layout="vertical" bordered>
             <a-descriptions-item label="化学成分/Chemical Composition">
