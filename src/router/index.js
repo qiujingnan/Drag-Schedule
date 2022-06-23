@@ -15,76 +15,12 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
 const routes = [
   {
     path: "/",
-    name: "Workplace",
-    redirect: "/dashboard",
-    component: Layout,
+    name: "Home",
+    component: () => import("@/views/HomePage/index.vue"),
+    hidden: true,
     meta: {
-      title: "Workplace",
-      icon: "dashboard",
+      title: "HomePage",
     },
-    children: [
-      {
-        path: "dashboard",
-        name: "dashboard",
-        component: () => import("@/views/dashboard/DashboardView.vue"),
-        meta: {
-          title: "Dashboard",
-          icon: "dashboard",
-        },
-      },
-    ],
-  },
-  {
-    path: "/userManagement",
-    name: "userManagement",
-    redirect: "/userManagement/users",
-    component: Layout,
-    meta: {
-      title: "User Management",
-      icon: "users",
-    },
-    children: [
-      {
-        path: "users",
-        name: "users",
-        component: () => import("@/views/userManagement/UserView.vue"),
-        meta: {
-          title: "Users",
-          icon: "users",
-        },
-      },
-      {
-        path: "roles",
-        name: "roles",
-        hidden: false,
-        component: () => import("@/views/userManagement/RoleView.vue"),
-        meta: {
-          title: "Roles",
-          icon: "users",
-        },
-      },
-    ],
-  },
-  {
-    path: "/form",
-    name: "form",
-    redirect: "/form/basicForm",
-    component: Layout,
-    meta: {
-      title: "Form",
-      icon: "form",
-    },
-    children: [
-      {
-        path: "basicForm",
-        name: "basicForm",
-        component: () => import("@/views/form/BasicForm.vue"),
-        meta: {
-          title: "Basic Form",
-          icon: "form",
-        },
-      },
-    ],
   },
   {
     path: "/login",
