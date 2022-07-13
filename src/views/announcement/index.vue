@@ -1,6 +1,6 @@
 <template>
   <div class="announcePage">
-    <announce-ment></announce-ment>
+    <announce-ment :listData="listData"></announce-ment>
   </div>
 </template>
 <script>
@@ -12,15 +12,29 @@ export default {
     announceMent,
   },
   data() {
-    return {};
+    return { listData: [] };
   },
   watch: {},
   computed: {
     ...mapGetters(["name"]),
   },
   created() {},
-  mounted() {},
-  methods: {},
+  mounted() {
+    // 从后端获取公告列表
+    this.getAnnounce();
+  },
+  methods: {
+    getAnnounce() {
+      for (let i = 0; i < 23; i++) {
+        this.listData.push({
+          id: "",
+          title: `First ask yourself this question: who needs this product and why? ${i}First ask yourself this question: who needs this product and why?`,
+          date: Date(),
+          description: "",
+        });
+      }
+    },
+  },
 };
 </script>
 <style lang="less" scoped>

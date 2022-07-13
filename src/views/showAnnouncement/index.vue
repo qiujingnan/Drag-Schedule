@@ -1,7 +1,7 @@
 <template>
   <div class="announce-show">
-    <p>First ask yourself this question: who needs this product and why?</p>
-    <div class="containner">
+    <h1>First ask yourself this question: who needs this product and why?</h1>
+    <div class="container">
       {{ content }}
     </div>
   </div>
@@ -37,6 +37,8 @@ export default {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    column-count: 3;
+    font-size: 18px;
   }
 }
 

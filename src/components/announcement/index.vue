@@ -24,32 +24,21 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
-const listData = [];
-for (let i = 0; i < 23; i++) {
-  listData.push({
-    id: "",
-    title: `ant design vue part ${i}`,
-    date: Date(),
-    description: "",
-  });
-}
+
 export default {
   name: "announcement",
   components: {},
+  props: {
+    listData: Array,
+  },
   data() {
     return {
-      listData,
       pagination: {
         onChange: (page) => {
           console.log(page);
         },
         pageSize: 10,
       },
-      actions: [
-        { type: "star-o", text: "156" },
-        { type: "like-o", text: "156" },
-        { type: "message", text: "2" },
-      ],
     };
   },
   watch: {},

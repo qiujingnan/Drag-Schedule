@@ -52,6 +52,12 @@ const routes = [
     component: () => import("@/views/showAnnouncement/index.vue"),
     hidden: true,
   },
+  {
+    path: "/announceManagement",
+    name: "showannouncement",
+    component: () => import("@/views/announceManagement/index.vue"),
+    hidden: true,
+  },
 ];
 
 const router = new VueRouter({
