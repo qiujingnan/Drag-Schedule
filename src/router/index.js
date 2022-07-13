@@ -40,6 +40,18 @@ const routes = [
       title: "404",
     },
   },
+  {
+    path: "/announcement",
+    name: "announcement",
+    component: () => import("@/views/announcement/index.vue"),
+    hidden: true,
+  },
+  {
+    path: "/announcement/content",
+    name: "showannouncement",
+    component: () => import("@/views/showAnnouncement/index.vue"),
+    hidden: true,
+  },
 ];
 
 const router = new VueRouter({
