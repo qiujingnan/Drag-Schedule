@@ -64,7 +64,7 @@ export default {
           {
             min: 3,
             max: 120,
-            message: "Length should be 3 to 150",
+            message: "Length should be 3 to 120",
             trigger: "blur",
           },
         ],
