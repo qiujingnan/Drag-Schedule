@@ -1,0 +1,68 @@
+.calendar {
+  margin-top: 10px;
+  min-width: 1080px;
+  min-height: 650px;
+  //   background-color: red;
+
+  &-colum {
+    // width: calc(100% / 5);
+    position: relative;
+    &-row {
+      width: 100%;
+      align-items: center;
+      height: calc((100% - 32px) / 5);
+      // height: 200px;
+      font-family: Bosch Sans;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #8497f5;
+      overflow: scroll;
+    }
+  }
+  &-colum > :second-child {
+    height: 40px;
+  }
+  &-colum > :first-child {
+    height: 40px;
+    font-family: Bosch Sans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 40px;
+    letter-spacing: 0px;
+    overflow: hidden;
+    color: #8497f5;
+  }
+}
+.calendar:first-child :first-child {
+  // width: 157px;
+
+  // bottom;
+}
+.triangle04 {
+  // margin-top: 10px;
+  position: absolute;
+  left: 0px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-right: 10px solid #8497f5;
+}
+.triangle06 {
+  // margin-top: 10px;
+  // margin-left: 5px;
+  position: absolute;
+  right: 0px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 10px solid #8497f5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(132, 151, 245, 0.3);
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
