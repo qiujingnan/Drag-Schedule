@@ -1,5 +1,6 @@
-[Demo](https://pages.github.boschdevcloud.com/ZDO5WX/Vue2-Antdv-Demo/).
 
+[Demo完成任务效果图](https://github.com/qiujingnan/Drag-Schedule/blob/myComponents/donw.png).
+[Demo拖拽效果图](https://github.com/qiujingnan/Drag-Schedule/blob/myComponents/drag.png).
 # vue2_antdv
 
 ## Project setup
@@ -32,8 +33,7 @@ pnpm run build:pro
 
 
 
-[Demo 完成任务效果图](https://github.com/qiujingnan/Drag-Schedule/blob/myComponents/donw.png).
-[Demo 拖拽效果图](https://github.com/qiujingnan/Drag-Schedule/blob/myComponents/drag.png).
+
 
 ## Desp
 功能简介：
